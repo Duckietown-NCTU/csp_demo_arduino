@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <launch>
 	<arg name="veh"  doc="Name of vehicle"/>
-	<arg name="pkg_name" default="???">
+	<arg name="pkg_name" default="???"/>
 	<arg name="arduino" default="true"/>
 	<arg name="wheel" default="false"/>
 	<!-- ============== open ROS on arduino ============== -->
@@ -22,7 +22,5 @@
 			pkg="$(arg pkg_name)" type="wheel_node.py" 
 			name="wheel_node" output="screen" clear_params="true">
 		</node>
-
 	</group>
-
 </launch>
