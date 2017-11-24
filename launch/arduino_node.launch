@@ -18,6 +18,7 @@
 			name="arduino_node" output="screen" clear_params="true">
 		</node>
 		<!-- open wheel -->
+		<remap from="xxx" to="yyy" />
 		<node if="$(arg wheel)"
 			pkg="$(arg pkg_name)" type="wheel_node.py" 
 			name="wheel_node" output="screen" clear_params="true">
