@@ -20,7 +20,7 @@
 		<!-- open wheel -->
 		<node if="$(arg wheel)"
 			pkg="$(arg pkg_name)" type="wheel_node.py" 
-			output="screen" clear_params="true">
+			name="wheel_node" output="screen" clear_params="true">
 		</node>
 
 	</group>
