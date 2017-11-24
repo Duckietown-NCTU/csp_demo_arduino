@@ -14,7 +14,7 @@ class arduinoROS(object):
         self.pub_result = rospy.Publisher("~result", BoolStamped, queue_size=1)
 
         # =========== subscriber ===========
-        self.sub_odom = rospy.Subscriber("???", Float32, self.cbDis)
+        self.sub_dis = rospy.Subscriber("???", Float32, self.cbDis)
         self.sub_tags = rospy.Subscriber("~tag_info", AprilTagDetectionArray, self.cbTags)
 
    # =========== subscribe distance from arduino ===========
