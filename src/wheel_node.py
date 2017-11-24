@@ -5,8 +5,6 @@ from duckietown_msgs.msg import BoolStamped, Twist2DStamped
 
 class arduinoROS(object):
     def __init__(self):
-        self.dis = 0.0 # distance from ultrasound
-
         # =========== publisher ===========
         self.pub_car_cmd = rospy.Publisher("~car_cmd", Twist2DStamped, queue_size=1)
 
