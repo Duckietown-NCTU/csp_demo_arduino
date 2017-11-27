@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import rospy
 import numpy as np
-from duckietown_msgs.msg import ?????
+from duckietown_msgs.msg import BoolStamped, Twist2DStamped
 
 class arduinoWheel(object):
     def __init__(self):
