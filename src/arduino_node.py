@@ -26,12 +26,12 @@ class arduinoROS(object):
         drive = BoolStamped()
         if self.dis < 30.0:
             #led_cmd.data = ???
-            #publish led_cmd
+            #self.pub_led??? (you should publish led_cmd)
             #drive.data = True
             #publish 'drive' to topic "~result"
         else:
             #led_cmd.data = ???
-            #publish led_cmd
+            #self.pub_led??? (you should publish led_cmd)
             #drive.data = False
             #publish 'drive to topic "~result"
         '''
