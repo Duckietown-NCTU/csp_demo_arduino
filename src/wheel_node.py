@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 import rospy
 import numpy as np
-from duckietown_msgs.msg import BoolStamped, Twist2DStamped
+from duckietown_msgs.msg import ?????
 
 class arduinoWheel(object):
     def __init__(self):
         # =========== publisher ===========
-        self.pub_car_cmd = rospy.Publisher("~car_cmd", Twist2DStamped, queue_size=1)
+        # publish to topic "car_cmd" (you may have to see the code last week)
 
         # =========== subscriber ===========
-        self.sub_tags = rospy.Subscriber("~result", BoolStamped, self.cbresult)
+        # subscribe to topic "result" (you should see arduino_node.py)
 
    # =========== subscribe distance from arduino ===========
     def cbresult(self, msg):
