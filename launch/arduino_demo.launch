@@ -18,10 +18,10 @@
 	<arg name="wheel" default="false"/>
 	<!-- end switch args -->
 
+
 	<!-- ============================ Arduino to ROS ============================== -->
 	<!-- open serial between arduino and ROS -->
 	<group if="$(arg arduino)">
-		<remap from="follow_apriltags_node/position_info" to="detect_apriltags_node/position_info" />
 		<remap from="???" to="tag_detections" />
 		<include file="$(find csp_demo_arduino)/launch/arduino_node.launch" >
 			<arg name="veh" value="$(arg veh)"/>
